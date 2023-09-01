@@ -3,9 +3,19 @@
   font-size: 24px;
 }
 
-.logo {
-  flex-direction: row;
-  align-items: center;
+.nav-links {
+  display: flex;
+  justify-content: end;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-links a:hover {
+  color: blue;
 }
 
 .logo-image {
@@ -16,4 +26,73 @@
   min-height: 44px;
   border-radius: 24px;
   min-width: 584px;
+  border: 1px solid #dadce0;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+  gap: 2rem;
+}
+
+.search-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1rem;
+  gap: 1.5rem;
+}
+
+.search-buttons input {
+  padding: 0.7rem;
+  border-radius: 1rem;
+  border: none;
+}
+
+.search-buttons input:hover {
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  color: #202124;
+}
+
+.adv-search-fields {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  min-width: 700px;
+}
+
+.adv-input {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-top: 1rem;
+  max-height: 40px;
+}
+
+.adv-input p {
+  min-width: 200px;
+}
+
+.adv-description {
+  min-width: 200px;
+}
+
+.adv-input input[type=text] {
+  min-width: 725px;
+}
+
+.adv-button {
+text-align: right;
+}
+
+.adv-submit-button {
+background-color: blue;
+color: white;
+width: 160px;
+border-radius: 4px;
 }
